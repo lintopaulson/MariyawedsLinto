@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariya & Linto - Engagement Invitation</title>
+
+    <meta property="og:title" content="Mariya & Linto - Engagement Invitation">
+    <meta property="og:description" content="We are getting engaged! Join us on April 29, 2026.">
+    <meta property="og:url" content="https://lintopaulson.github.io/MariyawedsLinto/">
+    <meta property="og:type" content="website">
+
+    <meta property="og:image" content="https://lintopaulson.github.io/MariyawedsLinto/favico.jpeg">
+    <meta property="og:image:secure_url" content="https://lintopaulson.github.io/MariyawedsLinto/favico.jpeg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <link rel="icon" type="image/jpeg" href="favico.jpeg">
+    <link rel="apple-touch-icon" href="favico.jpeg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Great+Vibes&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mariya.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+
+ <div id="preloader">
+  <div class="pre-bg"></div>
+
+  <div class="ring-scene">
+  <div class="ring">
+    <div class="pre-heart">♥</div>
+  </div>
+
+    <!-- letters -->
+    <div class="letters">
+      <span class="letter-l">L</span>
+      <span class="letter-m">M</span>
+    </div>
+
+    <div class="loading-text">
+      Loading <span id="loadPercent">0</span>%
+    </div>
+  </div>
+</div>
+
+<section class="hero">
+
+<div class="hero-bg"></div>
+<div class="hero-overlay"></div>
+<div id="soundToggle" class="sound-toggle">
+  <i class="fa-solid fa-volume-xmark"></i>
+</div>
+
+<div class="hero-content">
+  <div class="monogram">
+  L <span class="heart">♥</span> M
+</div>
+
+  <div class="gold">Mariya</div>
+  <div class="and">&</div>
+  <div class="gold">Linto</div>
+
+  <div class="context">Together with their families invite you to celebrate</div>
+  <div class="subtitle">April 29 · 2026</div>
+
+  <div class="cta-wrap">
+  <a href="#details" class="cta primary">View Details</a>
+</div>
+</div>
+
+<div class="scroll-indicator" ><span></span></div>
+
+</section>
+<audio id="music" loop muted playsinline>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+
+    <section class="countdown-container">
+        <h2>Counting down to our big day…</h2>
+        <div class="timer" id="countdown">
+            <div class="timer-box">
+                <div class="timer-circle"><span id="days">00</span></div>
+                <p>Days</p>
+            </div>
+            <div class="timer-box">
+                <div class="timer-circle"><span id="hours">00</span></div>
+                <p>Hours</p>
+            </div>
+            <div class="timer-box">
+                <div class="timer-circle"><span id="minutes">00</span></div>
+                <p>Minutes</p>
+            </div>
+            <div class="timer-box">
+    <div class="timer-circle">
+        <span id="seconds" class="pulse-seconds">00</span>
+    </div>
+    <p>Seconds</p>
+</div>
+        </div>
+    </section>
+
+    <section class="details" id="details">
+        <h2>The Engagement Ceremony</h2>
+        <p>With joyful hearts, we invite you to join us on our special day.</p>
+
+        <div class="details-grid">
+            <div class="card">
+                <div class="card-date">
+                    <span>4:00 PM</span>
+
+                </div>
+                <div class="card-info">
+                    <h3>The Ceremony</h3>
+
+                    <p><strong>CHRIST THE KING MONASTERY PARISH</strong></p>
+                    <p> Angamaly, Karukutty, Kerala 683576</p>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Christ+the+King+Church+Karukutty" 
+                    target="_blank" 
+                    class="map-button">Get Directions</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-date">
+                    <span>6:00 PM</span>
+
+                </div>
+                <div class="card-info">
+                    <h3>The Reception</h3>
+
+                    <p><strong>LA Mirage</strong></p>
+                    <p> Koratty Bazar Rd, Manjalykettu, Koratty, Kerala 680308</p>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=LA+Mirage+-Wedding+Venue+Koratty+Kerala+680308&destination_place_id=ChIJQ31tCPwDCDsRPIu2WsRCZRQ" 
+                    target="_blank" 
+                    class="map-button">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-wedding-section">
+    <div class="wedding-divider"></div>
+    <div class="wedding-content">
+        <h2>The Wedding Ceremony</h2>
+        <div class="wedding-highlight">
+            <span class="wedding-date">May 3rd, 2026</span>
+            <p class="wedding-church">St. Alphonsamma Church</p>
+            <p class="wedding-village">Vallakkunnu, Kerala</p>
+        </div>
+    </div>
+    <div class="wedding-divider"></div>
+</section>
+
+<div class="calendar-container">
+  <a 
+    href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+Holy+Mass+-+Christ+the+King+Church,+Karukutty&dates=20260429T160000/20260429T180000&details=Join+us+for+our+wedding+ceremony+at+Christ+the+King+Church+(Monastery).&location=Christ+the+King+Church,+Karukutty,+Angamaly,+Kerala+683576&ctz=Asia/Kolkata"
+    target="_blank" 
+    class="calendar-btn"
+  >
+    <img src="https://www.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_31_2x.png">
+    Add Mass to Calendar
+  </a>
+
+  <a 
+    href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+Reception+-+LA+Mirage,+Koratty&dates=20260429T180000/20260429T220000&details=Join+us+to+celebrate+at+our+wedding+reception!&location=LA+Mirage,+Koratty+Bazar+Rd,+Manjalykettu,+Kerala+680308&ctz=Asia/Kolkata"
+    target="_blank" 
+    class="calendar-btn"
+  >
+    <img src="https://www.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_31_2x.png">
+    Add Reception to Calendar
+  </a>
+</div>
+
+<section class="wishes-section">
+
+  <!-- Slider Card -->
+  <div class="wishes-card">
+    <div id="wishesSlider" class="wishes-slider"></div>
+  </div>
+
+  <!-- Button -->
+  <button id="openFormBtn" class="wishes-btn">
+    <i class="fa-regular fa-heart"></i>
+    Send your wishes
+  </button>
+
+  <!-- Form -->
+<div id="formOverlay" class="form-overlay">
+
+  <div id="messageForm" class="wishes-modal">
+    <input type="text" id="nameInput" placeholder="Your good name">
+    <textarea id="messageInput" placeholder="Write your wishes here..."></textarea>
+    <button id="submitMessage">Send Wishes</button>
+  </div>
+
+  <!-- Separate floating close button -->
+  <button id="closeFormBtn" class="modal-close-floating">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+
+</div>
+
+  <!-- Couple note -->
+  <div class="wishes-note">
+    <h3>Linto & Mariya</h3>
+    <p>We are looking forward to your presence on our wedding day and the party thereafter.</p>
+  </div>
+
+  <h2 class="thanks">Thank you</h2>
+
+</section>
+
+    <footer>
+        <p>#LintoWedsMariya2026</p>
+        <p>&copy; 2026 Linto & Mariya. Made with love.</p>
+    </footer>
+    
+   
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, getDocs } 
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+/* ================= FIREBASE CONFIG ================= */
+const firebaseConfig = {
+  apiKey: "AIzaSyBW4mEP3XkvSWYYOcvy3UaDJk1VXRnKqWg",
+  authDomain: "wedding-a9928.firebaseapp.com",
+  projectId: "wedding-a9928",
+  storageBucket: "wedding-a9928.firebasestorage.app",
+  messagingSenderId: "76310015650",
+  appId: "1:76310015650:web:6409fa87fe586b54acb1fb"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const wishesRef = collection(db, "wishes");
+
+/* ================= ELEMENTS ================= */
+const slider = document.getElementById("wishesSlider");
+const overlay = document.getElementById("formOverlay");
+const openBtn = document.getElementById("openFormBtn");
+const closeBtn = document.getElementById("closeFormBtn");
+const submitBtn = document.getElementById("submitMessage");
+const nameInput = document.getElementById("nameInput");
+const messageInput = document.getElementById("messageInput");
+
+let index = 1;
+let autoSlide;
+let isDraggingNow = false;
+let startPos = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+
+/* ================= MODAL LOGIC ================= */
+openBtn.addEventListener("click", () => overlay.classList.add("show"));
+closeBtn.addEventListener("click", () => overlay.classList.remove("show"));
+overlay.addEventListener("click", (e) => { if (e.target === overlay) overlay.classList.remove("show"); });
+
+/* ================= DATA HANDLER ================= */
+function renderWishes(snapshot) {
+  if (snapshot.empty) {
+    slider.innerHTML = "<p style='color:#888; font-family:Montserrat; padding:20px;'>Be the first to leave a wish!</p>";
+    return;
+  }
+
+  slider.innerHTML = "";
+  const track = document.createElement("div");
+  track.className = "wishes-track";
+
+  const wishes = [];
+  snapshot.forEach(doc => wishes.push(doc.data()));
+
+  const slides = [wishes[wishes.length - 1], ...wishes, wishes[0]];
+
+  slides.forEach(data => {
+    const card = document.createElement("div");
+    card.className = "wish";
+    card.innerHTML = `
+        <div class="wish-icon">🌸</div>
+        <div class="wish-text">“${data.message}”</div>
+        <div class="wish-name">${data.name}</div>
+    `;
+    track.appendChild(card);
+  });
+
+  slider.appendChild(track);
+  index = 1;
+  // Ensure DOM is painted before positioning
+  requestAnimationFrame(() => {
+      setTimeout(() => setPosition(false), 150);
+  });
+  startAutoSlide();
+}
+
+/* ================= LOAD DATA ================= */
+const q = query(wishesRef, orderBy("created", "desc"));
+
+// 1. Initial explicit fetch (fixes the "not seen on open" issue)
+getDocs(q).then((snapshot) => {
+    renderWishes(snapshot);
+}).catch(err => console.error("Initial fetch error:", err));
+
+// 2. Real-time listener
+onSnapshot(q, (snapshot) => {
+    renderWishes(snapshot);
+});
+
+/* ================= CORE POSITIONING ================= */
+function setPosition(animate = true) {
+    const track = document.querySelector(".wishes-track");
+    const cards = document.querySelectorAll(".wish");
+    if (!track || cards.length === 0) return;
+
+    const sliderWidth = slider.offsetWidth;
+    const cardWidth = cards[0].offsetWidth;
+    const style = window.getComputedStyle(cards[0]);
+    const marginLeft = parseFloat(style.marginLeft);
+    const totalGap = marginLeft + parseFloat(style.marginRight);
+
+    const centeringOffset = (sliderWidth - cardWidth) / 2;
+    const finalTranslate = (index * (cardWidth + totalGap)) - centeringOffset + marginLeft;
+
+    track.style.transition = animate ? "transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)" : "none";
+    currentTranslate = -finalTranslate;
+    prevTranslate = currentTranslate;
+    track.style.transform = `translateX(${currentTranslate}px)`;
+
+    cards.forEach((c, i) => c.classList.toggle("active", i === index));
+}
+
+/* ================= DRAG & SWIPE ================= */
+const startDrag = (e) => {
+    isDraggingNow = true;
+    startPos = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+    clearInterval(autoSlide);
+    const track = document.querySelector(".wishes-track");
+    if(track) track.style.transition = "none";
+};
+
+const moveDrag = (e) => {
+    if (!isDraggingNow) return;
+    const currentX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+    const diff = currentX - startPos;
+    const track = document.querySelector(".wishes-track");
+    if(track) track.style.transform = `translateX(${prevTranslate + diff}px)`;
+};
+
+const endDrag = (e) => {
+    if (!isDraggingNow) return;
+    isDraggingNow = false;
+    const endX = e.type.includes('mouse') ? e.clientX : e.changedTouches[0].clientX;
+    const movedBy = endX - startPos;
+
+    if (movedBy < -100) index++;
+    else if (movedBy > 100) index--;
+
+    setPosition(true);
+    startAutoSlide();
+};
+
+slider.addEventListener('mousedown', startDrag);
+slider.addEventListener('touchstart', startDrag, {passive: true});
+window.addEventListener('mousemove', moveDrag);
+slider.addEventListener('touchmove', moveDrag, {passive: true});
+window.addEventListener('mouseup', endDrag);
+slider.addEventListener('touchend', endDrag);
+
+/* ================= REFRESH ON APP SWITCH ================= */
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === 'visible') {
+    setPosition(false); // Snap back to center if browser paused the tab
+  }
+});
+
+/* ================= AUTO PLAY & LOOP ================= */
+function startAutoSlide() {
+  clearInterval(autoSlide);
+  autoSlide = setInterval(() => { index++; setPosition(true); }, 4000);
+}
+
+slider.addEventListener("transitionend", () => {
+  const cards = document.querySelectorAll(".wish");
+  if (!cards.length) return;
+  if (index === cards.length - 1) { index = 1; setPosition(false); }
+  else if (index === 0) { index = cards.length - 2; setPosition(false); }
+});
+
+submitBtn.addEventListener("click", async () => {
+  const name = nameInput.value.trim() || "Guest";
+  const message = messageInput.value.trim();
+  if (!message) return;
+  try {
+    await addDoc(wishesRef, { name, message, created: Date.now() });
+    nameInput.value = ""; messageInput.value = "";
+    overlay.classList.remove("show");
+  } catch (err) { console.error(err); }
+});
+
+window.addEventListener('resize', () => setPosition(false));
+</script>
+
+    <script src="mariya.js"></script>
+</body>
+
+</html>
